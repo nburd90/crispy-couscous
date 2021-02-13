@@ -2,4 +2,5 @@
 Group Project - Beyond the Reel 
 
 A five page website about Anthony's film company. 
--Includes: 'About Me', Contact Page, content, and links to past work. 
+
+Includes: 'About Me', Contact Page, content, and links to past work. 
