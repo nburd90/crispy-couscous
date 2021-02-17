@@ -11,7 +11,6 @@
         <form method="post" name="your-message">
             Full Name: <input type="text" name="fullname"/><br>
             Email: <input type="email" name="email"/><br>
-            
             Your Message: <textarea name="your message">type here</textarea><br>
             <input type="submit" value="send message"/>
         </form>
