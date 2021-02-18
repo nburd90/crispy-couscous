@@ -1,5 +1,4 @@
 
-
 div#header {
   width: 100%;
   height: 100px;
@@ -17,21 +16,6 @@ div#headerText {
   position: absolute;
   top: -10px;
   right: 90px;
-}
-
-#header h2 {
-  padding: 0;
-  width: 100%;
-  text-indent: -9999px;
-  margin: 0;
-}
-
-#header h3 {
-  margin: 0;
-  padding: 0;
-  clear: left;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
 }
 
 img#header {
@@ -73,7 +57,7 @@ div#header-inner {
    height: 100%;
    margin: 0 3em 0 0;*/
   padding: 0;
-  width: 68%;
+  width: 100%;
   height: 100%;
   float: right;
   margin: 0 3em 0 0;
@@ -92,7 +76,7 @@ div#header-inner {
   width: 97%;
   margin: 0 1.5%;
   padding-bottom: 100px;
-  margin-top: 69px;
+  margin-top: 50px;
 }
 
 
@@ -104,7 +88,7 @@ div#header-inner {
     padding: 0;
     margin: 0;
     line-height: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     position: relative;
 }
 
