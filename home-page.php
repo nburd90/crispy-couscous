@@ -16,10 +16,10 @@
 <header>
     <nav>
         <section>
-            <a href="/about-us.php">About Us</a><br>
-            <a href="/contact.php">Contact</a><br>
-            <a href="/news.php">News</a><br>
-            <a href="/archive.php">Video Archive</a><br>
+            <a href="about-us.php">About Us</a><br>
+            <a href="contact.php">Contact</a><br>
+            <a href="news.php">News</a><br>
+            <a href="archive.php">Video Archive</a><br>
         </section>
     </nav>
 </header>
