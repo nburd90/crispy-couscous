@@ -1,6 +1,11 @@
-header a {
-  text-decoration: none;
+body {
+  background-image: url(../crispy-couscous/crispy-images/pexel-photo.jpeg);
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-h3 {
+header a {
+  text-decoration: white;
 }
