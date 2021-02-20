@@ -27,24 +27,7 @@
 
 <body>
 
-    <h1><em>Beyond the Reel</em></h1>
-
-    <div class="div-list">
-        <ul class="div-list">
-        <h3>Members</h3> 
-            <li>Waymon</li>
-            <li>Anthony</li>
-            <li>Nick</li>
-        </ul>
-    </div>
-
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Omnis nulla alias hic expedita, sint sunt voluptatem tempore
-            praesentium cupiditate libero esse error maiores optio,
-            culpa laudantium reprehenderit, sequi et nostrum.
-        </p>
-    </div>
+<div class="container"></div>
 
 
 
