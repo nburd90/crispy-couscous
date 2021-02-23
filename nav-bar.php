@@ -1,16 +1,28 @@
+<!DOCTYPE html>
 <html>
+
+<head>
+<link rel="stylesheet" href="nav-bar.css">
+</head>
+
+
 <body>
+
 
 <header>
     <section>
-      <div id="nav-bar">
-      <nav class="nav">
-        <a href="about-us.php">About Us</a>
-        <a href="news.php">News</a>
-        <a href="Contact.php">Contact</a>
-        <a href="archive.php">Archive</a>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Home
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
       </div>
-      </nav>
     </section>
   </header>
 
