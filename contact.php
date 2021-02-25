@@ -11,7 +11,7 @@
 <body>
     
 <h1>Sign up for our movie pass!</h1>
-<form>
+<form class="form-horizontal" roles="form" method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
