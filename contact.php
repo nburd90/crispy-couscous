@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-
+<?php include('nav-bar.php'); ?>
 <body>
     <div name="form">
         <form method="post" name="your-message">
