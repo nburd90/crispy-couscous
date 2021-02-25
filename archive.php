@@ -15,7 +15,7 @@
     font-family: 'Indie Flower', cursive;
   }
 </style>
-
+<?php include('nav-bar.php'); ?>
 <body>
   
   <div>
