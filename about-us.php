@@ -23,6 +23,8 @@
 
 </style>
 
+<?php include('nav-bar.php'); ?>
+
 <body>
         
         <div>
