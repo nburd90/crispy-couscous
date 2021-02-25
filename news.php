@@ -24,7 +24,7 @@
             </tr>
             <tr class="newsItem">
                 <td>
-                    <div class="news-image-holder" style="background: url(../crispy-couscous/crispy-images/newspic1.jpg);"></div>
+                    <div class="news-image-holder" style="background: url(crispy-images/newspic1.jpg);"></div>
                 </td>
                   
             <td class="td-relative">
@@ -56,7 +56,7 @@
         </tr>
         <tr class="newsItem">
             <td>
-                <div class="news-image-holder" style="background:url(../crispy-couscous/crispy-images/newspic2.jpeg)"></div>
+                <div class="news-image-holder" style="background:url(crispy-images/newspic2.jpeg)"></div>
             </td>
         
         <td class="td-relative">
@@ -85,7 +85,7 @@
         </tr>
         <tr class="newsItem">
             <td>
-                <div class="news-image-holder" style="background: url(../crispy-couscous/crispy-images/newspic3.jpg);"></div>
+                <div class="news-image-holder" style="background: url(crispy-images/newspic3.jpg);"></div>
             </td>
             <td class="td-relative">
                 <p class="header-news" style="font-size: 24px">
