@@ -10,7 +10,7 @@
 
 <body>
     
-
+<h1>Sign up for our movie pass!</h1>
 <form>
   <div class="form-row">
     <div class="form-group col-md-6">
