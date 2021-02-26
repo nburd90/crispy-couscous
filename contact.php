@@ -14,8 +14,9 @@
 <form class="form-horizontal" roles="form" method="post">
   <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4">Full Name</label>
-      <input type="text" class="form-control" name="fullName" id="inputEmail4" placeholder="Full Name Here">
+      <label for="inputfullName4">Full Name</label>
+      <input type="text" class="form-control" name="fullName" id="inputfullName4" placeholder="Full Name Here">
+      <?php echo "<p class='text-danger'>$errName</p>";?>
     </div>
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
@@ -43,6 +44,13 @@
       <label for="inputZip">Zip</label>
       <input type="text" class="form-control" id="inputZip">
     </div>
+    <div class="form-group">
+		<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+		</div>
+	</div>
+  
   </div>
   <div class="form-group">
     <div class="form-check">
@@ -58,7 +66,20 @@
     
     <?php
        $fullName = $_POST["fullName"];
-       $email = $_POST['name'];
+       $email = $_POST['email'];
+
+      if (!$_POST['fullName']) {
+        $errName = 'Please enter your name';
+      }
+
+      if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        $errEmail = 'Please enter a valid email address';
+      }
+
+      if ($human !==5) {
+        $errHuman = 'Your anti-spam is incorrect';
+      }
+
 
        ?>
     
