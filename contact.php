@@ -15,13 +15,15 @@
   <div class="form-row">
   <div class="form-group col-md-6">
       <label for="inputfullName4">Full Name</label>
-      <input type="text" class="form-control" name="fullName" id="inputfullName4" placeholder="Full Name Here">
+      <input type="text" class="form-control" name="Name" id="inputfullName4" placeholder="Full Name Here">
       <?php echo "<p class='text-danger'>$errName</p>";?>
     </div>
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
       <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email">
+      <?php echo "<p class='text-danger'>$errEmail</p>";?>
     </div>
+
     <div class="form-group col-md-6">
       <label for="inputPassword4">Password</label>
       <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
@@ -48,8 +50,9 @@
 		<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-		</div>
-	</div>
+      <?php echo "<p class='text-danger'>$errHUman</p>";?>
+    </div>
+  </div>
   
   </div>
   <div class="form-group">
@@ -68,7 +71,7 @@
        $fullName = $_POST["fullName"];
        $email = $_POST['email'];
 
-      if (!$_POST['fullName']) {
+      if (!$_POST['Name']) {
         $errName = 'Please enter your name';
       }
 
@@ -80,12 +83,15 @@
         $errHuman = 'Your anti-spam is incorrect';
       }
 
+      
+
 
        ?>
     
-    
-    
-    
+    <br>
+    <br>
+    <br>
+    <br>
     
     
     <div name="form">
