@@ -13,9 +13,13 @@
 <h1>Sign up for our movie pass!</h1>
 <form class="form-horizontal" roles="form" method="post">
   <div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputEmail4">Full Name</label>
+      <input type="text" class="form-control" name="fullName" id="inputEmail4" placeholder="Email">
+    </div>
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email">
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">Password</label>
@@ -51,15 +55,19 @@
     <div class="form-check">
       <input class="form-check-input" type="checkbox" id="gridCheck">
       <label class="form-check-label" for="gridCheck">
-        Check me out
+        Click for personalized access!
       </label>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn btn-primary">Sign Up</button>
 </form>
     
     
-    
+    <?php
+       $fullName = $_POST["fullName"];
+       $email = $_POST['name'];
+
+       ?>
     
     
     
