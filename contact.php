@@ -83,35 +83,14 @@
         $errHuman = 'Your anti-spam is incorrect';
       }
 
-      
-
-
-       ?>
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    
-    
-    <div name="form">
-        <form method="post" name="your-message">
-            Full Name: <input type="text" name="fullName"/><br>
-            Email: <input type="email" name="email"/><br>
-            Your Message: <textarea name="yourMessage">type here</textarea><br>
-            <input type="submit" value="send message"/>
-        </form>
-    </div>
-
-    <?php 
-        $fullName = $_POST["fullName"];
-        $email = $_POST["email"];
-        $yourMessage = $_POST["yourMessage"];
-
-        echo "Hello $fullName <br>";
-        echo "We will respond to your message @ $email <br>";
-        
     ?>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
     
 </body>
 </html>
