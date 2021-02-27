@@ -11,6 +11,7 @@
 <body>
     
 <h1>Sign up for our movie pass!</h1>
+<div class="container">
 <form class="form-horizontal" roles="form" method="post">
   <div class="form-row">
   <div class="form-group col-md-6">
@@ -65,7 +66,7 @@
   </div>
   <button type="submit" class="btn btn-primary">Sign Up</button>
 </form>
-    
+</div  
     
     <?php
        $fullName = $_POST["fullName"];
