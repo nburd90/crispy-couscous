@@ -29,10 +29,7 @@
         <?php echo "<p class='text-danger'>$errEmail</p>";?>
       </div>
 
-      <div class="form-group col-md-6">
-        <label for="inputPassword4">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" value="<?php echo htmlspecialchars($name);?>"/>
-      </div>
+      
     </div>
     
     <div class="form-row">
