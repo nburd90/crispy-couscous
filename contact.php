@@ -36,33 +36,15 @@
 		  </div>
 	  </div>
 
-      
-    </div>
-    
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="inputCity" value="">
-      </div>
-      
-      <div class="form-group col-md-4">
-        <label for="inputState">State</label>
-        <select id="inputState" class="form-control">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      
-      
       <div class="form-group">
-      <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-      <div class="col-sm-10">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
         <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer" value="">
         <?php echo "<p class='text-danger'>$errHUman</p>";?>
+        </div>
       </div>
-    </div>
     
-    </div>
+    
     <div class="form-group">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -71,7 +53,18 @@
         </label>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Sign Up</button>
+    
+    <div class="form-group">
+		  <div class="col-sm-10 col-sm-offset-2">
+			  <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+		  </div>
+	  </div>
+	  
+    <div class="form-group">
+		  <div class="col-sm-10 col-sm-offset-2">
+			  <! Will be used to display an alert to the user>
+		  </div>
+	  </div>
   </form>
 </div  
     
