@@ -62,7 +62,7 @@
 	  
     <div class="form-group">
 		  <div class="col-sm-10 col-sm-offset-2">
-			  <! Will be used to display an alert to the user>
+        <?php echo $result; ?>	
 		  </div>
 	  </div>
   </form>
