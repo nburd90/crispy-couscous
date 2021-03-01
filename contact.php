@@ -32,14 +32,15 @@
       <div class="form-group cold-md-6">
 		    <label for="message" class="col-sm-2 control-label">Message</label>
 		    <div class="col-sm-10">
-			  <textarea class="form-control" rows="4" name="message"></textarea>
+			  <textarea class="form-control" rows="4" name="message" value="<?php echo htmlspecialchars($_POST['message']); ?>"></textarea>
+        <?php echo "<p class='text-danger'>$errEmail</p>";?>
 		  </div>
 	  </div>
 
       <div class="form-group">
         <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
         <div class="col-sm-10">
-        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer" value="">
+        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
         <?php echo "<p class='text-danger'>$errHUman</p>";?>
         </div>
       </div>
