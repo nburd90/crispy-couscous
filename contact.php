@@ -1,3 +1,6 @@
+<?php
+ini_set('display_errors', 1);
+?>
 <!DOCTYPE html>
 <html lang="en">
     
@@ -107,8 +110,6 @@
         $subject = 'movie pass signup';
 
         $body = "From: $name E-Mail: $email Message: $message";
-
-
       }
 
         //Check if name has been entered
@@ -121,6 +122,10 @@
           $errEmail = 'Please enter your name';
         }
 
+        //Check if message has been entered
+        if (!$_POST['message']) {
+	      $errMessage = 'Please enter your message';
+
         // Check if simple anti-bot test is correct
         if ($human !==5) {
           $errHuman = 'Your anti-spam is correct';
@@ -129,11 +134,12 @@
         // If there are no errors, send the email
         if (!$errName && !$errEmail && !$errMessage && !$errHuman)  {
           if (mail ($to, $subject, $body, $from)) {
-            $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+            $result='<div class="alert alert-success">Thank you! I will be in touch</div>';
           } else {
-            $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-        }
-      }
+            $result='div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+          }
+        }     
+          
     ?>
 
     <br>
