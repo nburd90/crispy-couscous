@@ -21,6 +21,13 @@ ini_set('display_errors', 1);
       $email = $_POST['email'];
       $message = $_POST['message'];
       $human = intval($_POST['human']);
+      $errName = 'Please enter your name';
+      $errEmail = 'Please enter your email';
+      $errMessage = 'Please enter your message';
+      $errHuman = 'Your anti-spam is correct';
+
+      
+      
       
       $from = 'Demo Contact Form'; 
       $to = 'example@domain.com'; 
@@ -38,24 +45,6 @@ ini_set('display_errors', 1);
         $subject = 'movie pass signup';
 
         $body = "From: $name E-Mail: $email Message: $message";
-      
-      if (!$_POST['name']) {
-        $errName = 'Please enter your name';
-      }
-
-      if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-        $errEmail = 'Please enter a valid email address';
-      }
-
-      if (!$_POST['message']) {
-        $errName = 'Please enter your name';
-      }
-
-      if ($human !==5) {
-        $errHuman = 'Your anti-spam is incorrect';
-      }
-     
-      
       }
 
         //Check if name has been entered
