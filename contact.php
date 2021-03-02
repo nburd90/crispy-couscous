@@ -15,64 +15,8 @@ ini_set('display_errors', 1);
     
 <h1>Sign up for our movie pass!</h1>
 <div class="container">
-  <form class="form-horizontal" roles="form" method="post" action="contact.php">
-    <div class="form-row">
-      
-      <div class="form-group col-md-6">
-        <label for="name" class="col-sm-2 control-label">Full Name</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" name="name" id="name" placeholder="Full Name Here" value="<?php echo htmlspecialchars($_POST['name']); ?>" >
-          <?php echo "<p class='text-danger'>$errName</p>";?>
-        </div>
-      </div>
-      
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email" value="<?php echo htmlspecialchars($_POST['email']); ?>" >
-        <?php echo "<p class='text-danger'>$errEmail</p>";?>
-      </div>
-
-      <div class="form-group cold-md-6">
-		    <label for="message" class="col-sm-2 control-label">Message</label>
-		    <div class="col-sm-10">
-			  <textarea class="form-control" rows="4" name="message" value="<?php echo htmlspecialchars($_POST['message']); ?>"></textarea>
-        <?php echo "<p class='text-danger'>$errEmail</p>";?>
-		  </div>
-	  </div>
-
-      <div class="form-group">
-        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-        <div class="col-sm-10">
-        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-        <?php echo "<p class='text-danger'>$errHUman</p>";?>
-        </div>
-      </div>
-    
-    
-    <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Click for personalized access!
-        </label>
-      </div>
-    </div>
-    
-    <div class="form-group">
-		  <div class="col-sm-10 col-sm-offset-2">
-			  <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-		  </div>
-	  </div>
-	  
-    <div class="form-group">
-		  <div class="col-sm-10 col-sm-offset-2">
-        <?php echo $result; ?>	
-		  </div>
-	  </div>
-  </form>
-</div  
-    
-    <?php 
+  
+<?php 
       $name = $_POST['name'];
       $email = $_POST['email'];
       $message = $_POST['message'];
@@ -141,6 +85,65 @@ ini_set('display_errors', 1);
         }     
           
     ?>
+  
+  <form class="form-horizontal" roles="form" method="post" action="contact.php">
+    <div class="form-row">
+      
+      <div class="form-group col-md-6">
+        <label for="name" class="col-sm-2 control-label">Full Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="name" id="name" placeholder="Full Name Here" value="<?php echo htmlspecialchars($_POST['name']); ?>" >
+          <?php echo "<p class='text-danger'>$errName</p>";?>
+        </div>
+      </div>
+      
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email" value="<?php echo htmlspecialchars($_POST['email']); ?>" >
+        <?php echo "<p class='text-danger'>$errEmail</p>";?>
+      </div>
+
+      <div class="form-group cold-md-6">
+		    <label for="message" class="col-sm-2 control-label">Message</label>
+		    <div class="col-sm-10">
+			  <textarea class="form-control" rows="4" name="message" value="<?php echo htmlspecialchars($_POST['message']); ?>"></textarea>
+        <?php echo "<p class='text-danger'>$errEmail</p>";?>
+		  </div>
+	  </div>
+
+      <div class="form-group">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+        <?php echo "<p class='text-danger'>$errHUman</p>";?>
+        </div>
+      </div>
+    
+    
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Click for personalized access!
+        </label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+		  <div class="col-sm-10 col-sm-offset-2">
+			  <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+		  </div>
+	  </div>
+	  
+    <div class="form-group">
+		  <div class="col-sm-10 col-sm-offset-2">
+        <?php echo $result; ?>	
+		  </div>
+	  </div>
+  </form>
+</div  
+    
+    
 
     <br>
     <br>
