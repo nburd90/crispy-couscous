@@ -27,7 +27,18 @@ ini_set('display_errors', 1);
       $subject = 'Message from Contact Demo';
 
       $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+      
+      if (isset($_POST["submit"])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $human = intval($_POST['human']);
+        $from = 'contact form';
+        $to = 'example@domain.com';
+        $subject = 'movie pass signup';
 
+        $body = "From: $name E-Mail: $email Message: $message";
+      
       if (!$_POST['name']) {
         $errName = 'Please enter your name';
       }
@@ -44,16 +55,7 @@ ini_set('display_errors', 1);
         $errHuman = 'Your anti-spam is incorrect';
       }
      
-      if (isset($_POST["submit"])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $human = intval($_POST['human']);
-        $from = 'contact form';
-        $to = 'example@domain.com';
-        $subject = 'movie pass signup';
-
-        $body = "From: $name E-Mail: $email Message: $message";
+      
       }
 
         //Check if name has been entered
@@ -63,7 +65,7 @@ ini_set('display_errors', 1);
 
         // Check if email has been entered and is valid 
         if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-          $errEmail = 'Please enter your name';
+          $errEmail = 'Please enter your email';
         }
 
         //Check if message has been entered
