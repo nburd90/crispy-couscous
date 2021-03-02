@@ -26,9 +26,6 @@ ini_set('display_errors', 1);
       $errMessage = 'Please enter your message';
       $errHuman = 'Your anti-spam is correct';
 
-      
-      
-      
       $from = 'Demo Contact Form'; 
       $to = 'example@domain.com'; 
       $subject = 'Message from Contact Demo';
@@ -36,46 +33,54 @@ ini_set('display_errors', 1);
       $body = "From: $name\n E-Mail: $email\n Message:\n $message";
       
       if (isset($_POST["submit"])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $human = intval($_POST['human']);
-        $from = 'contact form';
-        $to = 'example@domain.com';
-        $subject = 'movie pass signup';
-
-        $body = "From: $name E-Mail: $email Message: $message";
+        
+        if (!empty(trim($_POST['name']))) {
+          $name = trim($_POST['name']))
+        } else {
+          if (!$_POST['name']) {
+            $errName = 'Please enter your name';
+          }
+        }
+          
+      if (!empty(trim($_POST['email']))) {
+        $email = trim($_POST['email']))
+      } else {
+      // Check if email has been entered and is valid 
+      if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      $errEmail = 'Please enter your email';
+        }
       }
-
-        //Check if name has been entered
-        if (!$_POST['name']) {
-          $errName = 'Please enter your name';
-        }
-
-        // Check if email has been entered and is valid 
-        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-          $errEmail = 'Please enter your email';
-        }
-
+      
+      
+      
+      if (!empty(trim($_POST['message']))) {
+        $message = trim($_POST['message']))
+      } else {
         //Check if message has been entered
-        if (!$_POST['message']) {
+       if (!$_POST['message']) {
 	      $errMessage = 'Please enter your message';
-
+       }
+      }
+      
+      if (!empty(trim($_POST['human']))) {
+          $human = trim($_POST['human']))
+        } else {
         // Check if simple anti-bot test is correct
         if ($human !==5) {
-          $errHuman = 'Your anti-spam is correct';
+        $errHuman = 'Your anti-spam is correct';
         }
-
-        // If there are no errors, send the email
-        if (!$errName && !$errEmail && !$errMessage && !$errHuman)  {
-          if (mail ($to, $subject, $body, $from)) {
-            $result='<div class="alert alert-success">Thank you! I will be in touch</div>';
-          } else {
-            $result='div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-          }
-        }     
-          
-    ?>
+      }
+      
+      // If there are no errors, send the email
+     if (!$errName && !$errEmail && !$errMessage && !$errHuman)  {
+      if (mail ($to, $subject, $body, $from)) {
+        $result='<div class="alert alert-success">Thank you! I will be in touch</div>';
+      } else {
+        $result='div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+      }
+    }     
+  }
+?>
   
   <form class="form-horizontal" roles="form" method="post" action="contact.php">
     <div class="form-row">
@@ -90,7 +95,7 @@ ini_set('display_errors', 1);
       
       <div class="form-group col-md-6">
         <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email" value="">
+        <input type="email" class="form-control" name="email" <?=($name ? ) id="inputEmail4" placeholder="Email" value="">
         <?php echo "<p class='text-danger'>$errEmail</p>";?>
       </div>
 
