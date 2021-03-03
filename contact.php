@@ -105,17 +105,18 @@ ini_set('display_errors', 1);
         <div class="form-row form-input-name-row">
           <label>
             <span>Your name</span>
-            <input id="name" type="text" name="name"  placeholder="Full Name Here" value="<?= validate_input('name');?>">
+            <input id="name" type="text" name="name"  placeholder="Full Name Here" value="<?= validate_input('name');?> ">
           </label>  
         </div>
         
-       <!-- <div class="form-group col-md-6">
-          <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email" value="">
-          
+        <div class="form-row form-input-name-row">
+          <label>
+            <span>Email</span>  
+            <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email" value="<?= validate_input('email');?> ">
+          </label>
         </div>
 
-        <div class="form-group cold-md-6">
+       <!--  <div class="form-group cold-md-6">
           <label for="message" class="col-sm-2 control-label">Message</label>
           <div class="col-sm-10">
           <textarea class="form-control" rows="4" name="message" value=""></textarea>
