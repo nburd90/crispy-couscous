@@ -1,4 +1,6 @@
 <?php
+
+//Show errors for debuggin purposes
 ini_set('display_errors', 1);
 
 
@@ -12,8 +14,11 @@ if ( ! empty( $_POST)) {
 //Check for errors
 if (!empty($process['message'])) {
   $errors[] $process['message'];
+} else if (!empty($process['errors'])) {
+  $errors = $process['errors'];
+} else {
+  $sent = true;
 }
-
 
 
 
@@ -56,16 +61,15 @@ if (!empty($process['message'])) {
           <label>
             <span>Your Message</span>
             <textarea id="message" rows="4" name="message" value=""></textarea>
-        </label> 
-      </div>
+          </label> 
+        </div>
 
-        <!-- <div class="form-group">
-          <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-          <div class="col-sm-10">
-          <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-          
-          </div>
-        </div> -->
+        <div class="form-row form-input-human-row">
+          <label>
+            <span>2 + 3 = ?</span>
+            <input id="human" type="text" name="human" placeholder="Your Answer">
+          </label>
+        </div> 
       
       
       <div class="form-group">
@@ -85,8 +89,7 @@ if (!empty($process['message'])) {
       
       <div class="form-group">
         <div class="col-sm-10 col-sm-offset-2">
-          <?php echo $result; ?>	
-        </div>
+          
       </div>
     </form>
     </div>
