@@ -105,22 +105,22 @@ ini_set('display_errors', 1);
         <div class="form-group col-md-6">
           <label for="name" class="col-sm-2 control-label">Full Name</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="name" id="name" placeholder="Full Name Here" value="" >
-            <?php echo(isset($errName) ? "<p class='text-danger'>$errName</p>" : ''; ?>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Full Name Here" value="<?= validate_input('name');?>">
+             
           </div>
         </div>
         
-        <div class="form-group col-md-6">
+       <!-- <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
           <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email" value="">
-          <?php echo(isset($errEmail)) "<p class='text-danger'>$errEmail</p>";?>
+          
         </div>
 
         <div class="form-group cold-md-6">
           <label for="message" class="col-sm-2 control-label">Message</label>
           <div class="col-sm-10">
           <textarea class="form-control" rows="4" name="message" value=""></textarea>
-          <?php echo "<p class='text-danger'>$errEmail</p>";?>
+          
         </div>
       </div>
 
@@ -128,9 +128,9 @@ ini_set('display_errors', 1);
           <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
           <div class="col-sm-10">
           <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-          <?php echo "<p class='text-danger'>$errHUman</p>";?>
+          
           </div>
-        </div>
+        </div> -->
       
       
       <div class="form-group">
