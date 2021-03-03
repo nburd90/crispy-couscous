@@ -1,6 +1,24 @@
 <?php
 ini_set('display_errors', 1);
+
+
+
+//Check for form submission
+if ( ! empty( $_POST)) {
+  //Process the form
+  $process = process_form( $_POST );
+}
+
+//Check for errors
+if (!empty($process['message'])) {
+  $errors[] $process['message'];
+}
+
+
+
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     
@@ -13,118 +31,35 @@ ini_set('display_errors', 1);
 
 <body>
     
-<h1>Sign up for our movie pass newsletter!</h1>
+
 <div class="container">
   <div name="form"> 
-  <?php 
-        
-      $name = '';
-      $email = '';
-      $message = '';
-      $human = '';
-      $errName = '';
-      $errEmail = '';
-      $errMessage = '';
-      $errHuman = '';
-        
-      /*  
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $human = intval($_POST['human']);
-        $errName = 'Please enter your name';
-        $errEmail = 'Please enter your email';
-        $errMessage = 'Please enter your message';
-        $errHuman = 'Your anti-spam is correct';*/
-
-        $from = 'Demo Contact Form'; 
-        $to = 'example@domain.com'; 
-        $subject = 'Message from Contact Demo';
-
-        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-        
-        if (isset($_POST["submit"])) {
-          
-          if (!empty(trim($_POST['name']))) {
-            $name = trim($_POST['name']))
-          } else {
-              echo $errName;
-          }
-            
-        if (!empty(trim($_POST['email']))) {
-          $email = trim($_POST['email']))
-        } else {
-          echo $errEmail;
-        }
-
-
-        /*Check if email has been entered and is valid 
-        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-        $errEmail = 'Please enter your email';
-          }
-        }*/
-        
-        if (!empty(trim($_POST['message']))) {
-          $message = trim($_POST['message']))
-        } else {
-          echo $errMessage;
-        }
-        
-        /*Check if message has been entered
-        if (!$_POST['message']) {
-          $errMessage = 'Please enter your message';
-        }
-        }*/
-        
-        if (!empty(trim($_POST['human']))) {
-            $human = trim($_POST['human']))
-          } else {
-            echo $errHuman;
-          }
-          
-          /* Check if simple anti-bot test is correct
-          if ($human !==5) {
-          $errHuman = 'Your anti-spam is correct';
-          }
-        }*/
-        
-        // If there are no errors, send the email
-      if (!$errName && !$errEmail && !$errMessage && !$errHuman)  {
-        if (mail ($to, $subject, $body, $from)) {
-          $result='<div class="alert alert-success">Thank you! I will be in touch</div>';
-        } else {
-          $result='div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-        }
-      }     
-    }
-  ?>
-    
-    <form class="form-horizontal" roles="form" method="post" action="contact.php">
-      <div class="form-row">
-        
+  
+    <form class="form-validation" roles="form" method="post" action="contact.php">
+      <div class="form-title-row">
+      <h1>Sign up for our movie pass newsletter!</h1>
         <div class="form-row form-input-name-row">
           <label>
             <span>Your name</span>
-            <input id="name" type="text" name="name"  placeholder="Full Name Here" value="<?= validate_input('name');?> ">
+            <input id="name" type="text" name="name"  placeholder="Your Name Here" value="<?= validate_input('name');?> ">
           </label>  
         </div>
         
-        <div class="form-row form-input-name-row">
+        <div class="form-row form-input-email-row">
           <label>
             <span>Email</span>  
-            <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email" value="<?= validate_input('email');?> ">
+            <input id="email" type="email" name="email"  placeholder="Email" value="<?= validate_input('email');?> ">
           </label>
         </div>
 
-       <!--  <div class="form-group cold-md-6">
-          <label for="message" class="col-sm-2 control-label">Message</label>
-          <div class="col-sm-10">
-          <textarea class="form-control" rows="4" name="message" value=""></textarea>
-          
-        </div>
+       <div class="form-row form-input-message-row">
+          <label>
+            <span>Your Message</span>
+            <textarea id="message" rows="4" name="message" value=""></textarea>
+        </label> 
       </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
           <div class="col-sm-10">
           <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
