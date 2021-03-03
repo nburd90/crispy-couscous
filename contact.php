@@ -17,6 +17,17 @@ ini_set('display_errors', 1);
 <div class="container">
   <div name="form"> 
   <?php 
+        
+      $name = '';
+      $email = '';
+      $message = '';
+      $human = '';
+      $errName = '';
+      $errEmail = '';
+      $errMessage = '';
+      $errHuman = '';
+        
+      /*  
         $name = $_POST['name'];
         $email = $_POST['email'];
         $message = $_POST['message'];
@@ -24,7 +35,7 @@ ini_set('display_errors', 1);
         $errName = 'Please enter your name';
         $errEmail = 'Please enter your email';
         $errMessage = 'Please enter your message';
-        $errHuman = 'Your anti-spam is correct';
+        $errHuman = 'Your anti-spam is correct';*/
 
         $from = 'Demo Contact Form'; 
         $to = 'example@domain.com'; 
@@ -37,39 +48,45 @@ ini_set('display_errors', 1);
           if (!empty(trim($_POST['name']))) {
             $name = trim($_POST['name']))
           } else {
-            if (!$_POST['name']) {
-              $errName = 'Please enter your name';
-            }
+              echo $errName;
           }
             
         if (!empty(trim($_POST['email']))) {
           $email = trim($_POST['email']))
         } else {
-        // Check if email has been entered and is valid 
+          echo $errEmail;
+        }
+
+
+        /*Check if email has been entered and is valid 
         if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         $errEmail = 'Please enter your email';
           }
-        }
-        
-        
+        }*/
         
         if (!empty(trim($_POST['message']))) {
           $message = trim($_POST['message']))
         } else {
-          //Check if message has been entered
+          echo $errMessage;
+        }
+        
+        /*Check if message has been entered
         if (!$_POST['message']) {
           $errMessage = 'Please enter your message';
         }
-        }
+        }*/
         
         if (!empty(trim($_POST['human']))) {
             $human = trim($_POST['human']))
           } else {
-          // Check if simple anti-bot test is correct
+            echo $errHuman;
+          }
+          
+          /* Check if simple anti-bot test is correct
           if ($human !==5) {
           $errHuman = 'Your anti-spam is correct';
           }
-        }
+        }*/
         
         // If there are no errors, send the email
       if (!$errName && !$errEmail && !$errMessage && !$errHuman)  {
