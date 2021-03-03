@@ -13,7 +13,7 @@ ini_set('display_errors', 1);
 
 <body>
     
-<h1>Sign up for our movie pass!</h1>
+<h1>Sign up for our movie pass newsletter!</h1>
 <div class="container">
   <div name="form"> 
   <?php 
@@ -113,7 +113,7 @@ ini_set('display_errors', 1);
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
           <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Email" value="">
-          <?php echo "<p class='text-danger'>$errEmail</p>";?>
+          <?php echo(isset($errEmail)) "<p class='text-danger'>$errEmail</p>";?>
         </div>
 
         <div class="form-group cold-md-6">
