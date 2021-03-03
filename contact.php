@@ -55,10 +55,6 @@ if (!empty($process['message'])) {
         </div>  
       <?php endif; ?>
       
-      
-      
-      
-      
       <div class="form-row form-input-name-row">
           <label>
             <span>Your name</span>
@@ -76,7 +72,7 @@ if (!empty($process['message'])) {
        <div class="form-row form-input-message-row">
           <label>
             <span>Your Message</span>
-            <textarea id="message" rows="4" name="message" value=""></textarea>
+            <textarea id="message" rows="4" name="message" ><?= validate_input('message');?></textarea>
           </label> 
         </div>
 
