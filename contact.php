@@ -3,7 +3,8 @@
 //Show errors for debuggin purposes
 ini_set('display_errors', 1);
 
-
+$errors = arrary();
+$sent = false;
 
 //Check for form submission
 if ( ! empty( $_POST)) {
@@ -42,11 +43,22 @@ if (!empty($process['message'])) {
   
     <form class="form-validation" roles="form" method="post" action="contact.php">
       <div class="form-title-row">
-      <h1>Sign up for our movie pass newsletter!</h1>
-        <div class="form-row form-input-name-row">
+        <h1>Sign up for our movie pass newsletter!</h1>
+      </div>
+      <?php if ( ! empty ($errors)) : ?>
+        <div class="errors">
+          <p class="bg-danger"><?php echo implode('.</p><p class="bg-danger">', $errors); ?> .</p>
+        </div>
+      
+      
+      
+      
+      
+      
+      <div class="form-row form-input-name-row">
           <label>
             <span>Your name</span>
-            <input id="name" type="text" name="name"  placeholder="Your Name Here" value="<?= validate_input('name');?> ">
+              <input id="name" type="text" name="name"  placeholder="Your Name Here" value="<?= validate_input('name');?> ">
           </label>  
         </div>
         
@@ -81,19 +93,12 @@ if (!empty($process['message'])) {
         </div>
       </div>
       
-      <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-          <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-      </div>
-      
-      <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-          
+      <div class="form-row">
+        <button type="submit">Submit Form</button>
       </div>
     </form>
-    </div>
   </div>
+</div>
     
     
 
