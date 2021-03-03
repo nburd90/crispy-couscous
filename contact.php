@@ -6,9 +6,9 @@ ini_set('display_errors', 1);
 $errors = array();
 $sent = false;
 
-//Check for form submission
+//Check for form submission - Is the form empty? 
 if ( ! empty( $_POST)) {
-  //Process the form
+  //Process the form - Will refer to process_form function. 
   $process = process_form( $_POST );
 }
 
@@ -49,6 +49,10 @@ if (!empty($process['message'])) {
         <div class="errors">
           <p class="bg-danger"><?php echo implode('.</p><p class="bg-danger">', $errors); ?> .</p>
         </div>
+      <?php elseif ( $sent ) : ?>
+        <div class="success">
+        <p class="bg-success">Your message was sent!</p>
+        </div>  
       
       
       
