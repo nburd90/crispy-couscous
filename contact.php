@@ -102,12 +102,11 @@ ini_set('display_errors', 1);
     <form class="form-horizontal" roles="form" method="post" action="contact.php">
       <div class="form-row">
         
-        <div class="form-group col-md-6">
-          <label for="name" class="col-sm-2 control-label">Full Name</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" name="name" id="name" placeholder="Full Name Here" value="<?= validate_input('name');?>">
-             
-          </div>
+        <div class="form-row form-input-name-row">
+          <label>
+            <span>Your name</span>
+            <input id="name" type="text" name="name"  placeholder="Full Name Here" value="<?= validate_input('name');?>">
+          </label>  
         </div>
         
        <!-- <div class="form-group col-md-6">
