@@ -1,9 +1,9 @@
 <?php
 
-//Show errors for debuggin purposes
+//Show errors for debugging purposes
 ini_set('display_errors', 1);
 
-$errors = arrary();
+$errors = array();
 $sent = false;
 
 //Check for form submission
