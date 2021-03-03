@@ -12,7 +12,7 @@ if ( ! empty( $_POST)) {
   $process = process_form( $_POST );
 }
 
-//Check for errors
+//Check for errors - Determines whether it sends back blanket message or array of diff errors.
 if (!empty($process['message'])) {
   $errors[] $process['message'];
 } else if (!empty($process['errors'])) {
@@ -53,7 +53,7 @@ if (!empty($process['message'])) {
         <div class="success">
         <p class="bg-success">Your message was sent!</p>
         </div>  
-      
+      <?php endif; ?>
       
       
       
