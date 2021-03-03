@@ -106,7 +106,7 @@ ini_set('display_errors', 1);
           <label for="name" class="col-sm-2 control-label">Full Name</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" name="name" id="name" placeholder="Full Name Here" value="" >
-            <?php echo "<p class='text-danger'>$errName</p>";?>
+            <?php echo(isset($errName) ? "<p class='text-danger'>$errName</p>" : ''; ?>
           </div>
         </div>
         
