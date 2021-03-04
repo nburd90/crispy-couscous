@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="news-styles.css" />
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Behind the Reel | News</title>
   </head>
-
   <body>
-    <!--Header-->
-    <div id="header"></div>
-    <div id="searchLinks"></div>
-    <div id="header-inner"></div>
+    <h1>News</h1>
 
-    <div id="container">
-      <div id="content-container">
-        <div id="content">
-        <p class="header-large">News</p>
-
+    
+  
         <table>
           <tbody>
             <tr class="newsItem">
@@ -116,5 +116,10 @@
             </div>
         </div>
     </div>
-  </body>
+  
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
 </html>

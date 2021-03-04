@@ -12,7 +12,7 @@
 <body>
     
 <main>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
         <img src="..." class="d-block w-100" alt="...">
@@ -34,14 +34,7 @@
     </button>
     </div>
     
-        <section>
-            <h1>About Us</h1>
-                <p>Behind the Reel specializes in the discovering and financing of independently led film projects. 
-                When creating the company we thought that people's passions should be centerstage. 
-                While branding ourselves as the wards of content creation, bringing Buffalo into the film-making forefront, 
-                and more importantly onto people's television screens became our mission.</p>
-                <b/><p></p>
-        </section>
+        
    <!-- Wrap rest of page in container to center contet --> 
         <div class="container marketing">
             <div class="row">
