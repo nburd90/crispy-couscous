@@ -10,6 +10,8 @@
 
     <title>Behind the Reel | News</title>
   </head>
+  
+  <?php include('nav-bar.php'); ?>
   <body>
     <h1>News</h1>
 
