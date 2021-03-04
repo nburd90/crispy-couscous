@@ -17,8 +17,26 @@
                 When creating the company we thought that people's passions should be centerstage. 
                 While branding ourselves as the wards of content creation, bringing Buffalo into the film-making forefront, 
                 and more importantly onto people's television screens became our mission.</p>
-            <p></p>
-            <p></p> 
+            <b/><p></p>
+             
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
 
     </section>
 
