@@ -21,7 +21,7 @@
             <h1>About Us</h1>
             </div>    
         </section>
-    <div class="aboutUs">
+        <div class="aboutUs">
             <p>When we created BehindTheReel we set out to empower people's passions and place them centerstage. 
                 Our company specializes in the discovering and financing of indie film projects around the country. 
             </p>
@@ -30,44 +30,33 @@
             Alias, fugiat.
             </p>
             <p>Add more to this blurb...</p>
-    </div>   
+        </div>   
    
-   
-   
-   
-   
-   
-   <!-- Wrap rest of page in container to center contet --> 
-        <div class="container marketing">
+        <div name="cardGallery">
             <div class="row">
-                <div class=".col-md-6">
-                    <img class="bd-placeholder-img rounded-circle" src="..." alt="Card image cap">
-                        <h2>heading</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Eligendi adipisci ut porro consectetur voluptate, pariatur autem sit, 
-                            explicabo sint at iste sunt voluptas, obcaecati modi. 
-                            Impedit necessitatibus incidunt ex laboriosam.
-                    <p>
-                        <a class="btn-btn-secondary" href="#" role="button"></a>
-                    </p>
+                <div class="col-sm-6">
+                    <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
                 </div>
-            
-                <div class="col-md-6">
-                    <img class="bd-placeholder-img rounded-circle" src="..." alt="Card image cap">
-                    <h2>heading</h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptates iste eaque, ipsum sapiente rem vel repellendus maxime accusamus excepturi 
-                        itaque qui porro quae facilis placeat, 
-                        dolores repudiandae neque libero natus. 
-                        card title and make up the bulk of the card's content.
-                    </p>
-                    <p>
-                        <a class="btn-btn-secondary" href="#" role="button"></a>
-                    </p>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-</div>
+         </div>
+   
+   
+   </div>
 
 
 <footer class="footer"></footer>        
