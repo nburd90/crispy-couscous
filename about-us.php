@@ -10,18 +10,26 @@
   <?php include('nav-bar.php'); ?>
 
 <body>
-    
 
+    <div class="bannerImage">
+        <img src="crispy-images/indiefilms.jpg">
+    </div>
     
-<div class="container">  
-    <section>
-        <div class="pageTitle">
-        <h1>About Us</h1>
-        </div>    
-    </section>
+    <div class="container">  
+        <section>
+            <div class="pageTitle">
+            <h1>About Us</h1>
+            </div>    
+        </section>
     <div class="aboutUs">
-        <p></p>
-    
+            <p>When we created BehindTheReel we set out to empower people's passions and place them centerstage. 
+                Our company specializes in the discovering and financing of indie film projects around the country. 
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Sed, officiis? A laudantium, porro dolore magnam saepe nihil ipsum nesciunt sapiente molestiae tempora eaque sit soluta voluptate rem recusandae? 
+            Alias, fugiat.
+            </p>
+            <p>Add more to this blurb...</p>
     </div>   
    
    
