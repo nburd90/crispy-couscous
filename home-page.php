@@ -11,10 +11,10 @@
     <link rel="shortcut icon" href="" type=""/> -->
 </head>
 
-<?php include('nav-bar.php'); ?>
+
 
 <body>
-
+<?php include('nav-bar.php'); ?>
 <div class="container"><!--will fill in--></div>
 
 

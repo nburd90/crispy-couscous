@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     
 </head>
-<?php include('nav-bar.php'); ?>
+
 <body>
+<?php include('nav-bar.php'); ?>
     <div name="form">
         <form method="post" name="your-message">
             Full Name: <input type="text" name="fullName"/><br>

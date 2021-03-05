@@ -11,8 +11,9 @@
     <title>Behind the Reel | News</title>
   </head>
   
-  <?php include('nav-bar.php'); ?>
+  
   <body>
+  <?php include('nav-bar.php'); ?>
     <h1>News</h1>
 
     
