@@ -11,9 +11,9 @@
     <link rel="shortcut icon" href="" type=""/> -->
 </head>
 
+<body>
 <?php include('nav-bar.php'); ?>
 
-<body>
 
 <div class="container"><!--will fill in--></div>
 
