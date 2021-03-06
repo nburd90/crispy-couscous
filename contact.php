@@ -24,7 +24,7 @@
         $fullName = $_POST["fullName"];
         $email = $_POST["email"];
         $yourMessage = $_POST["yourMessage"];
-
+        
         echo "Hello $fullName <br>";
         echo "We will respond to your message @ $email <br>";
         

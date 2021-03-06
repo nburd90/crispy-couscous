@@ -12,7 +12,6 @@
 </head>
 
 
-
 <body>
 <?php include('nav-bar.php'); ?>
 <div class="container"><!--will fill in--></div>
