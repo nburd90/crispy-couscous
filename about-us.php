@@ -16,11 +16,7 @@
     </div>
     
     <div class="container">  
-        <section>
-            <div class="pageTitle">
-            <h1>About Us</h1>
-            </div>    
-        </section>
+        <h1>About Us</h1>
         <div class="aboutUs">
             <p>When we created BehindTheReel we set out to empower people's passions and place them centerstage. 
                 Our company specializes in the discovering and financing of indie film projects around the country. 
