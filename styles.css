@@ -1,11 +1,13 @@
-body {
+.home-bg {
   background-image: url(crispy-images/pexel-photo.jpeg);
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
-header a {
-  text-decoration: white;
+.banner {
+  display: block;
+  width: 100%;
+  height: 475px;
+  opacity: 0.9;
 }
