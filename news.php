@@ -9,13 +9,16 @@
   <body>
   <?php include('nav-bar.php'); ?>
     <h1>News</h1>
-        <table>
-            <tbody>
-                <tr class="newsItem">
+        <div class="container">
+            <div class="newsSection">
+                
+                
+                <div class="newsItem">
                     <td width:23%; position: relative;>
                         <p class="header-medium">2021</p>
                     </td>
-                </tr>
+                </div>
+                
                 <tr class="newsItem">
                     <td>
                         <div class="news-image-holder" style="background: url(crispy-images/newspic1.jpg);"></div>
@@ -41,17 +44,18 @@
                     </a>
                 </td>
                 </tr>   
+            
             <!-- Separate News Section-->
-            <tr class="newsItem">
+            <div class="newsItem">
                 <td width:23%; position: relative;>
                     <p class="header-medium">2020</p>
                 </td>
-            </tr>
-            <tr class="newsItem">
+            </div>
+            <div class="newsItem">
                 <td>
                     <div class="news-image-holder" style="background:url(crispy-images/newspic2.jpeg)"></div>
                 </td>
-            <td class="td-relative">
+            <div class="td-relative">
                 <p class="header-news" style="font-size: 24px">
                     Independent announces sales on documentary the "DONUT KING", 
                     Led By A multi-territory Acquisition From VICE Media
@@ -69,12 +73,12 @@
             </td>
             </tr>
             <!-- Another News Section-->
-            <tr class="newsItem">
+            <div class="newsItem">
                 <td width:23%; position: relative;>
                     <p class="header-medium">2020</p>
                 </td>
-            </tr>
-            <tr class="newsItem">
+            </div>
+            <div class="newsItem">
                 <td>
                     <div class="news-image-holder" style="background: url(crispy-images/newspic3.jpg);"></div>
                 </td>
@@ -96,8 +100,8 @@
                 </a>
                 </td>
                 </tr>
-                </tbody>
-                </table>
+                </div>
+                </div>
             </div>
         </div>
     </div>
