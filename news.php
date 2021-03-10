@@ -12,10 +12,8 @@
         <div class="newsPage">
             <h1>News</h1>
             <div class="newsSection">
-                <!--<div width:23%; position: relative;>
-                        <p class="header-medium">2021</p>
-                    </div>
-                    <div class="news-image-holder" style="background: url(crispy-images/newspic1.jpg);"></div>-->
+                    <p class="header-medium">2021</p>
+                    <div class="news-image-holder" style="background: url(crispy-images/newspic1.jpg);"></div>
                 <div class="newsItem">
                     <div class="newsItemSummary">
                         <p class="header-news" style="font-size: 24px">
@@ -36,10 +34,8 @@
             </div>   
             <!-- Separate News Section-->
             <div class="newsSection">  
-                <!--<div width:23%; position: relative;>
                 <p class="header-medium">2020</p>
-                </div>
-                <div class="news-image-holder" style="background:url(crispy-images/newspic2.jpeg)"></div>-->
+                <div class="news-image-holder" style="background:url(crispy-images/newspic2.jpeg)"></div>
                 <div class="newsItem">
                     <div class="newsItemSummary">
                         <p class="header-news" style="font-size: 24px">
@@ -58,10 +54,8 @@
             </div>
             <!-- Another News Section-->
             <div class="newsSection">
-                <!--<div width:23%; position: relative;>
-                    <p class="header-medium">2020</p>
-                </div>
-                <div class="news-image-holder" style="background: url(crispy-images/newspic3.jpg);"></div>-->
+                <p class="header-medium">2020</p>
+                <div class="news-image-holder" style="background: url(crispy-images/newspic3.jpg);"></div>
                 <div class="newsItem">
                     <div class="newsItemSummary">  
                         <p class="header-news" style="font-size: 24px">
