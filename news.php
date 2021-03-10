@@ -13,7 +13,9 @@
             <h1>News</h1>
             <div class="newsSection">
                     <p class="header-medium">2021</p>
-                    <div class="news-image-holder" style="background: url(crispy-images/newspic1.jpg);"></div>
+                    <div class="news-image-holder">
+                        <img src="newspic3.jpg">
+                    </div>
                 <div class="newsItem">
                     <div class="newsItemSummary">
                         <p class="header-news" style="font-size: 24px">
@@ -34,8 +36,10 @@
             </div>   
             <!-- Separate News Section-->
             <div class="newsSection">  
-                <p class="header-medium">2020</p>
-                <div class="news-image-holder" style="background:url(crispy-images/newspic2.jpeg)"></div>
+                    <p class="header-medium">2020</p>
+                    <div class="news-image-holder">
+                       <img src="newspic2.jpg"> 
+                    </div>
                 <div class="newsItem">
                     <div class="newsItemSummary">
                         <p class="header-news" style="font-size: 24px">
@@ -46,16 +50,17 @@
                             with VICE acquiring the film in a multi-territory deal.
                         </p>  
                     </div>
-                    <a href="https://www.independentfilmcompany.com/news/independent_announces_sales_on_documentary_the_donut_king__led_by_a_multiterritory_acquisition_from_vice_media.html"
-                    target="blank">
+                    <a href="https://www.independentfilmcompany.com/news/independent_announces_sales_on_documentary_the_donut_king__led_by_a_multiterritory_acquisition_from_vice_media.html" target="blank">
                         <button class="read-more-button">Read More</button>
                     </a>
                 </div>
             </div>
             <!-- Another News Section-->
             <div class="newsSection">
-                <p class="header-medium">2020</p>
-                <div class="news-image-holder" style="background: url(crispy-images/newspic3.jpg);"></div>
+                    <p class="header-medium">2020</p>
+                    <div class="news-image-holder">
+                        <img src="newspic3.jpg">
+                    </div>
                 <div class="newsItem">
                     <div class="newsItemSummary">  
                         <p class="header-news" style="font-size: 24px">
@@ -67,8 +72,7 @@
                         <em>The Racer</em>
                         </p>
                     </div>
-                    <a href="https://www.independentfilmcompany.com/news/vertigo_releasing_picks_up_cycling_drama_the_racer_for_uk__ireland.html"
-                    target="blank">
+                    <a href="https://www.independentfilmcompany.com/news/vertigo_releasing_picks_up_cycling_drama_the_racer_for_uk__ireland.html" target="blank">
                     <button class="read-more-button">Read More</button>
                     </a>
                 </div>
