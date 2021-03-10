@@ -14,17 +14,17 @@
                 
                 
                 <div class="newsItem">
-                    <td width:23%; position: relative;>
+                    <div width:23%; position: relative;>
                         <p class="header-medium">2021</p>
-                    </td>
+                    </div>
                 </div>
                 
-                <tr class="newsItem">
-                    <td>
+                <div class="newsItem">
+                    <div>
                         <div class="news-image-holder" style="background: url(crispy-images/newspic1.jpg);"></div>
-                    </td>
+                    </div>
                     
-                <td class="td-relative">
+                <div class="td-relative">
                     <p class="header-news" style="font-size: 24px">
                         Emma Corrin to Star Opposite Harry Styles 'My Policeman'
                     <p class="news-date">09 February 2021</p>
@@ -47,14 +47,14 @@
             
             <!-- Separate News Section-->
             <div class="newsItem">
-                <td width:23%; position: relative;>
+                <div width:23%; position: relative;>
                     <p class="header-medium">2020</p>
-                </td>
+                </div>
             </div>
             <div class="newsItem">
-                <td>
+                <div>
                     <div class="news-image-holder" style="background:url(crispy-images/newspic2.jpeg)"></div>
-                </td>
+                </div>
             <div class="td-relative">
                 <p class="header-news" style="font-size: 24px">
                     Independent announces sales on documentary the "DONUT KING", 
@@ -70,19 +70,19 @@
                     target="blank">
                     <button class="read-more-button">Read More</button>
                 </a>
-            </td>
-            </tr>
+            </div>
+            </div>
             <!-- Another News Section-->
             <div class="newsItem">
-                <td width:23%; position: relative;>
+                <div width:23%; position: relative;>
                     <p class="header-medium">2020</p>
-                </td>
+                </div>
             </div>
             <div class="newsItem">
-                <td>
+                <div>
                     <div class="news-image-holder" style="background: url(crispy-images/newspic3.jpg);"></div>
-                </td>
-                <td class="td-relative">
+                </div>
+                <div class="td-relative">
                     <p class="header-news" style="font-size: 24px">
                         Vertigo Releasing Picks Up Cycling Drama 'The Racer' For UK & Ireland
                     </p>
@@ -98,8 +98,8 @@
                     target="blank">
                     <button class="read-more-button">Read More</button>
                 </a>
-                </td>
-                </tr>
+                </div>
+                </div>
                 </div>
                 </div>
             </div>
