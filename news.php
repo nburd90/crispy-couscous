@@ -10,42 +10,34 @@
   <?php include('nav-bar.php'); ?>
     <h1>News</h1>
         <div class="container">
-            <div class="newsSection">
-                
-                
-                <div class="newsItem">
-                    <div width:23%; position: relative;>
+            <div class="newsPage">
+                <div class="newsSection">
+                    <!--<div width:23%; position: relative;>
                         <p class="header-medium">2021</p>
                     </div>
-                </div>
-                
-                <div class="newsItem">
-                    <div>
-                        <div class="news-image-holder" style="background: url(crispy-images/newspic1.jpg);"></div>
-                    </div>
+                    <div class="news-image-holder" style="background: url(crispy-images/newspic1.jpg);"></div>-->
+                    <div class="newsItem">
+                        <div class="newsItemSummary">
+                            <p class="header-news" style="font-size: 24px">
+                                Emma Corrin to Star Opposite Harry Styles 'My Policeman'
+                            <p class="news-date">09 February 2021</p>
+                            <p>
+                                "Coming off her Golden Globe and Sag Nominations for her
+                                portrayal of Princess Diana in&nbsp;
+                                <em>The Crown</em>
+                                &nbsp;will star opposite&nbsp;
+                                Harry Styles"
+                            </p>
+                        </div>
                     
-                <div class="td-relative">
-                    <p class="header-news" style="font-size: 24px">
-                        Emma Corrin to Star Opposite Harry Styles 'My Policeman'
-                    <p class="news-date">09 February 2021</p>
-                    <div class="newsItemSummary">
-                        <p>
-                            "Coming off her Golden Globe and Sag Nominations for her
-                            portrayal of Princess Diana in&nbsp;
-                            <em>The Crown</em>
-                            &nbsp;will star opposite&nbsp;
-                            Harry Styles"
-                        </p>
-                    </p>
+                        <a href="https://www.independentfilmcompany.com/news/emma_corrin_to_star_opposite_harry_styles__my_policeman.html" target="blank">
+                            <button class="read-more-button">Read More</button>
+                        </a>
                     </div>
-                    <a href="https://www.independentfilmcompany.com/news/emma_corrin_to_star_opposite_harry_styles__my_policeman.html"
-                        target="blank">
-                        <button class="read-more-button">Read More</button>
-                    </a>
-                </td>
-                </tr>   
+                </div>   
             
             <!-- Separate News Section-->
+            
             <div class="newsItem">
                 <div width:23%; position: relative;>
                     <p class="header-medium">2020</p>
@@ -71,7 +63,8 @@
                     <button class="read-more-button">Read More</button>
                 </a>
             </div>
-            </div>
+        </div>
+            
             <!-- Another News Section-->
             <div class="newsItem">
                 <div width:23%; position: relative;>
