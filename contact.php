@@ -5,12 +5,21 @@ require_once('config.php');
 //Show errors for debugging purposes
 ini_set('display_errors', 1);
 
-
-$errors = array();
-$sent = false;
-
 //Check for form submission - Is the form empty? 
-if ( ! empty( $_POST)) {
+if ( ! empty( $_POST))
+  //Connect and escape
+  $mysql = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+  $data = array_map(array($mysql, 'real_escape_string'), $_POST);
+  //convert to variable - name of key assigned to input value 
+  extract($data);
+  //Submit to database
+
+
+
+
+
+
+ {
   //Process the form - Will refer to process_form function. 
   $process = process_form( $_POST );
 }
