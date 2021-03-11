@@ -57,7 +57,7 @@
             </div>
             <!-- Another News Section-->
             <div class="newsSection">
-                    <p class="header-medium">2020</p>
+                <p class="header-medium">2020</p>
                 <div class="news-image-holder">
                     <img src="newspic3.jpg">
                 </div>
@@ -68,12 +68,12 @@
                         </p>
                         <p class="news-date">14 October 2020</p>
                         <p>
-                        Vertigo Releasing has acquired UK and Ireland distribution rights from Independent to Kieron J. Walshs cycling drama 
-                        <em>The Racer</em>
+                            Vertigo Releasing has acquired UK and Ireland distribution rights from Independent to Kieron J. Walshs cycling drama 
+                            <em>The Racer</em>
                         </p>
                     </div>
                     <a href="https://www.independentfilmcompany.com/news/vertigo_releasing_picks_up_cycling_drama_the_racer_for_uk__ireland.html" target="blank">
-                    <button class="read-more-button">Read More</button>
+                        <button class="read-more-button">Read More</button>
                     </a>
                 </div>
             </div>
