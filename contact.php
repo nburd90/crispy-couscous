@@ -15,7 +15,6 @@ if ( ! empty( $_POST)) {
   //Submit to database
   $query = "INSERT INTO users (name,email) VALUES ('$name','$email')";
   $insert = $mysql->query($query);
-
 }
 ?>
 
@@ -27,7 +26,16 @@ if ( ! empty( $_POST)) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
 </head>
 <body>
-  <div class="container">
+  <?php if ( isset($insert)):?>
+    <div class="message">
+    <?php if ($insert == true):?>
+      <p class="success">This submission was succesful!</p>
+      <?php else : ?>
+      <p class="error">There was an error with this submission.</p>
+      <?php endif; ?>
+    </div>
+  <?php endif; ?>     
+<div class="container">
     <div name="form"> 
       <form action="" method="post">
         <div class="form-title-row">
