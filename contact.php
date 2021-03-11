@@ -6,35 +6,17 @@ require_once('config.php');
 ini_set('display_errors', 1);
 
 //Check for form submission - Is the form empty? 
-if ( ! empty( $_POST))
+if ( ! empty( $_POST)) {
   //Connect and escape
   $mysql = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
   $data = array_map(array($mysql, 'real_escape_string'), $_POST);
   //convert to variable - name of key assigned to input value 
   extract($data);
   //Submit to database
+  $query = "INSERT INTO users (name,email) VALUES ('$name','$email')";
+  $insert = $mysql->query($query);
 
-
-
-
-
-
- {
-  //Process the form - Will refer to process_form function. 
-  $process = process_form( $_POST );
 }
-
-//Check for errors - Determines whether it sends back blanket message or array of diff errors.
-if (!empty($process['message'])) {
-  $errors[] $process['message'];
-} else if (!empty($process['errors'])) {
-  $errors = $process['errors'];
-} else {
-  $sent = true;
-}
-
-
-
 ?>
 
 <!DOCTYPE html>
