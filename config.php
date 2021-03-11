@@ -1,9 +1,7 @@
 <?php
+define("DB_NAME", "behindthereel.com");
+define("DB_USER", "root");
+define("DB_PASS", "");
+define("DB_HOST", "localhost");
 
 
-
-//Set the email address submissions will be sent to 
-$email_address = "johndoe@dinosaurmail.com";
-
-//Subject line for email address 
-$subject = "New contact form submission";
