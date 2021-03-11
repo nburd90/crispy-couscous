@@ -13,9 +13,9 @@
             <h1>News</h1>
             <div class="newsSection">
                     <p class="header-medium">2021</p>
-                    <div class="news-image-holder">
-                        <img src="newspic3.jpg">
-                    </div>
+                <div class="news-image-holder">
+                    <img src="newspic3.jpg">
+                </div>
                 <div class="newsItem">
                     <div class="newsItemSummary">
                         <p class="header-news" style="font-size: 24px">
@@ -37,9 +37,9 @@
             <!-- Separate News Section-->
             <div class="newsSection">  
                     <p class="header-medium">2020</p>
-                    <div class="news-image-holder">
-                       <img src="newspic2.jpg"> 
-                    </div>
+                <div class="news-image-holder">
+                    <img src="newspic2.jpg"> 
+                </div>
                 <div class="newsItem">
                     <div class="newsItemSummary">
                         <p class="header-news" style="font-size: 24px">
@@ -58,9 +58,9 @@
             <!-- Another News Section-->
             <div class="newsSection">
                     <p class="header-medium">2020</p>
-                    <div class="news-image-holder">
-                        <img src="newspic3.jpg">
-                    </div>
+                <div class="news-image-holder">
+                    <img src="newspic3.jpg">
+                </div>
                 <div class="newsItem">
                     <div class="newsItemSummary">  
                         <p class="header-news" style="font-size: 24px">
