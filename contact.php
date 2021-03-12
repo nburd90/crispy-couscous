@@ -44,7 +44,14 @@ if ( ! empty( $_POST)) {
           $newReader->name = trim($_POST['name'])
       } else {
         $bError = true;
-        $error['name'] = 'Name cannot be empty'; 
+        $error['name'] = 'Name cannot be empty.'; 
+      }
+
+      if (!empty(trim($_POST['email']))) {
+        $student->setEmail(trim($_POST['email']));
+      } else {
+        $bError = true;
+        $error['email'] = 'Email is needed for submission!';
       }
       
       
