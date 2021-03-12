@@ -6,7 +6,7 @@ if ( ! empty( $_POST)) {
   //Connect and escape
   $mysql = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
   
-  //convert to variable - name of key assigned to input value 
+  
   
   //Submit to database
   $query = "INSERT INTO users (name,email) VALUES ('$name','$email')";
@@ -22,17 +22,36 @@ if ( ! empty( $_POST)) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
 </head>
 <body>
-  <?php if(isset($insert)):?>
+  
     <div class="message">
-    <?php if ($insert == true):?>
+    
       <p class="success">This submission was succesful!</p>
-      <?php else : ?>
+      
       <p class="error">There was an error with this submission.</p>
-      <?php endif; ?>
+      
     </div>
-  <?php endif; ?>     
+  
 <div class="container">
     <div name="form"> 
+      <?php 
+      $newReader = new reader();
+      $email = new email();
+      $error = array();
+      $bError = false;
+
+      if(isset($_POST['submit-btn'])) {
+        if(!empty(trim($_POST['name'])) {
+          $newReader->name = trim($_POST['name'])
+      } else {
+        $bError = true;
+        $error['name'] = 'Name cannot be empty'; 
+      }
+      
+      
+      ?>
+
+      
+      
       <form action="" method="post">
         <div class="form-title-row">
           <h1>Sign up for our movie pass newsletter!</h1>
