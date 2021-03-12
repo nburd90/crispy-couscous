@@ -1,17 +1,13 @@
 <?php
-
-require_once('config.php');
-
-//Show errors for debugging purposes
 ini_set('display_errors', 1);
-
+require_once('config.php');
 //Check for form submission - Is the form empty? 
 if ( ! empty( $_POST)) {
   //Connect and escape
   $mysql = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-  $data = array_map(array($mysql, 'real_escape_string'), $_POST);
+  
   //convert to variable - name of key assigned to input value 
-  extract($data);
+  
   //Submit to database
   $query = "INSERT INTO users (name,email) VALUES ('$name','$email')";
   $insert = $mysql->query($query);
