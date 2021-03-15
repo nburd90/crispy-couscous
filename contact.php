@@ -27,53 +27,36 @@ if (!empty($_POST)) {
 	<div class="container">
 		<div name="form">
 			<?php
-			$newReader = "";
+			$name = "";
 			$email = "";
-			$nameErr = "";
-			$emailErr = "";
+			$bError = false;
 			$error = array();
-
-			//$bError = false;
-
-
-
-			function test_input($data)
-			{
-				$data = trim($data);
-				$data = stripslashes($data);
-				$data = htmlspecialchars($data);
-				return $data;
-			}
-
+			
 
 			if (isset($_POST['submit-btn'])) {
 				if (!empty(trim($_POST["name"]))) {
-					//$newReader->name = trim($_POST['name']);
-				}
 			} else {
 				$bError = true;
-				$error["name"] = 'Name cannot be empty.';
+				$error['name'] = 'First name cannot be empty!';
 			}
 
 			if (!empty(trim($_POST["email"]))) {
-				//$student->setEmail(trim($_POST['email']));
-			} else {
+				if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+				$emailErr = 'Invalid email format';
+			}	else {
 				$bError = true;
-				$error["email"] = 'Email is needed for submission!';
+				$error['email'] = 'Email cannot be empty!!';
 			}
-
 			?>
-			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+			<form action="" method="post">
 				<div class="form-title-row">
 					<h1>Sign up for our movie pass newsletter!</h1>
 				</div>
 				<div class="form-field">
 					<input type="text" name="name" placeholder="Your Name Here" value="">
-					<span class="error"><?= $nameErr ?></span>
 				</div>
 				<div class="form-field">
 					<input type="email" name="email" placeholder="Email" value="">
-					<span class="error"><?= $emailErr ?></span>
 				</div>
 				<div class="form-field">
 					<button type="submit">Sign Up</button>
@@ -83,5 +66,4 @@ if (!empty($_POST)) {
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
-
 </html>
