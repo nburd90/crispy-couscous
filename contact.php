@@ -9,8 +9,8 @@ if (!empty($_POST)) {
 
 
 	//Submit to database
-	$query = "INSERT INTO users (name,email) VALUES ('$name','$email')";
-	$insert = $mysql->query($query);
+	//$query = "INSERT INTO users (name,email) VALUES ('$name','$email')";
+	//$insert = $mysql->query($query);
 }
 ?>
 
@@ -29,36 +29,51 @@ if (!empty($_POST)) {
 			<?php
 			$newReader = "";
 			$email = "";
+			$nameErr = "";
+			$emailErr = "";
 			$error = array();
 
 			//$bError = false;
 
+
+
+			function test_input($data)
+			{
+				$data = trim($data);
+				$data = stripslashes($data);
+				$data = htmlspecialchars($data);
+				return $data;
+			}
+
+
 			if (isset($_POST['submit-btn'])) {
-				if (!empty(trim($_POST['name']))) {
+				if (!empty(trim($_POST["name"]))) {
 					//$newReader->name = trim($_POST['name']);
 				}
 			} else {
 				$bError = true;
-				$error['name'] = 'Name cannot be empty.';
+				$error["name"] = 'Name cannot be empty.';
 			}
 
-			if (!empty(trim($_POST['email']))) {
+			if (!empty(trim($_POST["email"]))) {
 				//$student->setEmail(trim($_POST['email']));
 			} else {
 				$bError = true;
-				$error['email'] = 'Email is needed for submission!';
+				$error["email"] = 'Email is needed for submission!';
 			}
-			if (!$bError)
+
 			?>
 			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 				<div class="form-title-row">
 					<h1>Sign up for our movie pass newsletter!</h1>
 				</div>
 				<div class="form-field">
-					<input type="text" name="name" placeholder="Your Name Here" value="<?= htmlspecialchars('name'); ?> ">
+					<input type="text" name="name" placeholder="Your Name Here" value="">
+					<span class="error"><?= $nameErr ?></span>
 				</div>
 				<div class="form-field">
-					<input type="email" name="email" placeholder="Email" value="<?= htmlspecialchars('email'); ?> ">
+					<input type="email" name="email" placeholder="Email" value="">
+					<span class="error"><?= $emailErr ?></span>
 				</div>
 				<div class="form-field">
 					<button type="submit">Sign Up</button>
