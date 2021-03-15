@@ -1,6 +1,9 @@
 <?php
 
-//validate the math check
+/*
+Do not need functions yet
+
+validate the math check
 if (! validate_math($post['human'], 5)){
     return array( 'status' => 0, 'message' => 'Your math is supect');
 }
@@ -18,5 +21,4 @@ function validate_math( $value, $test) {
         return true;
     }
         return false;                                           
-}
-
+}*/
