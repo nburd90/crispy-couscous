@@ -49,7 +49,7 @@ require_once('config.php');
 					<input type="text" name="name" placeholder="Your Name Here" value="<?php if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>">
 				</div>
 				<div class="form-field">
-					<label>Email</label>
+					<label for="email">Email<span class="error">* <?php echo $emailErr;?></span></label>
 					<input type="email" name="email" placeholder="Email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
 				</div>
 				<div class="form-field">
