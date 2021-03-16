@@ -45,11 +45,11 @@ require_once('config.php');
 					<h1>Sign up for our movie pass newsletter!</h1>
 				</div>
 				<div class="form-field">
-					<label>Your Name</label>
+					<label for="name">Your Name<span class="error">* <?php echo $nameErr;?></span></label>
 					<input type="text" name="name" placeholder="Your Name Here" value="<?php if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>">
 				</div>
 				<div class="form-field">
-					<label>email</label>
+					<label>Email</label>
 					<input type="email" name="email" placeholder="Email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
 				</div>
 				<div class="form-field">
