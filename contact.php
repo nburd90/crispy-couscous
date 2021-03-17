@@ -1,14 +1,5 @@
 <?php
 ini_set('display_errors', 1);
-require_once('config.php');
-//Check for form submission - Is the form empty? 
-if (!empty($_POST)) {
-	//Connect and escape
-	//$mysql = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-	//Submit to database
-	//$query = "INSERT INTO users (name,email) VALUES ('$name','$email')";
-	//$insert = $mysql->query($query);
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,25 +14,23 @@ if (!empty($_POST)) {
 	<div class="container">
 		<div name="form">
 			<?php
-			//Define variables set to empty values
-			$name = '';
-			$email = '';
-			$nameErr = '';
-			$emailErr = '';
+			$name;
+			$email;
+			$nameErr;
+			$emailErr;
 
-			if (!empty($_POST['submit'])) {
-				var_dump($_POST);
+			if (isset(trim($_POST['submit']))) {
 				//Check if name was submitted
 				if (empty($_POST['name'])) {
 					$nameErr = "Name is required.";
 				} else {
-					$name = $_POST['name'];
+					$name = trim($_POST['name']);
 				}
 				//Check if email is submitted
 				if (empty($_POST['email'])) {
 					$emailErr = "Email is required";
 				} else {
-					$email = $_POST['email'];
+					$email = trim($_POST['email']);
 				}
 			}
 			?>
